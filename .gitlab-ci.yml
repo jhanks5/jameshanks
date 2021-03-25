@@ -1,0 +1,8 @@
+stages:
+  - build
+
+say-hello:
+  stage: build
+  script:
+    - echo "hello"
+  
