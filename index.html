@@ -10,29 +10,56 @@
       font-family: Arial, Helvetica, sans-serif;
     }
     html {
-        background: url(BeachPhoto.jpeg) no-repeat center center fixed; 
+        background: url(broaderShoulders.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
-    h1 {
+    #nameHeader {
       text-align: center;
+      font-size: 80px;
     }
-    p {
-      text-overflow: initial;
+    .bioContainer {
+      width: 30%;
+      position: absolute;
+      right: 5%;
+      float: right;
+      margin-top: 10%;
+    }
+    #bioDiv {
+      top: 30%;
+    }
+    #bioPara {
+      float: right;
+      text-align: right;
+    }
+    #stangDiv {
+      position: absolute;
+      top: 30%;
+      left: 5%;
+      float: left;
     }
     </style>
     </head>
     <body>
     
-    <h1>James Hanks</h1>
-    <div style="text-align: right; float: right;">
-    <p>BIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIOBIO</p>
+    <h1 id="nameHeader">James Hanks</h1>
+
+    <div id="bioWords" class="bioContainer">
+      <p id="bioPara">My name is James Edward Hanks Jr. I graduated in May 2020 with a B.Sc. in Computer Science and now I'm a civilian software developer for the United States Air Force. 
+        I love having a job where I can solve complex problems in a collaborative effort. After searching for what a niche that I like, I've been focusing on cloud computing and back-end infrastructure.
+        My up-to-date tech stack includes: AWS, Gitlab CI/CD, Git CLI in general, Jenkins, Docker, and Terraform. In school, I studied much more: Java, Python, HTML/CSS/JavaScript,
+        SQL, PHP, C++, and more. I also have an active Security Clearance.<br>
+        I'm naturally inclined to be interested in machines and numbers, so you'll find that alot of my hobbies incorporate that. In my free time, 
+        I'm into cars, watches, and anything I can find with a sub-system that makes it "go". I've also been playing video games my whole life, though these days
+        it's mostly just League of Legends; I try to spend the time better elsewhere. I've been programming more in my free time recently too, trying to learn as much
+        as I can. That's how this website originated!
+      </p> 
     </div>
 
-    <div style="float: left;">
-      <img src="meingarage.JPG" width="500" height="500">
+    <div id="stangDiv">
+      <img src="mustang.png" width="600px" height="600px">
     </div>
 
     </body>
