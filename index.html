@@ -37,38 +37,25 @@
       -ms-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out; 
     }
+    .subHeader {
+      text-align: right; display: inline; float: center;
+      color: #3b6b90; 
+    }
     #githubLogoImg {
       width: 100px;
       height: 100px;
       vertical-align: left; float: left;
     }
-    .bioContainer {
-      width: 35%;
-      position: absolute;
-      right: 5%;
-      float: right;
-      margin-top: 10%;
-    }
-    #bioDiv {
-      top: 30%;
-    }
-    #bioPara {
-      background-color: rgba(202, 218, 209, 0.20);
-      float: right;
-      text-align: left;
-      font-family: Helvetica, sans-serif;
-      font-size: 20px; font-weight: 535; /*Slightly heavier than normal*/
-      /* color: #7695c3; Color picked from background image */
-      color: #3b6b90; padding: 10px;
-    }
-    #bioBackground {
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-    #stangDiv {
+    #leftImgDiv {
       position: absolute;
       top: 30%;
       left: 5%;
       float: left;
+    }
+    #rightImgDiv {
+      position: absolute;
+      top: 30%; right: 5%;
+      float: right;
     }
     #stangImage {
       width: 600px;
@@ -94,28 +81,29 @@
     
     <div id="headerParentDiv">
     <h1 id="nameHeader">JAMES HANKS</h1>
+    <a href="about.html" class="subHeader">About</a>
+    <a href="contact.html" class="subHeader">Contact</h1>
     <img id="githubLogoImg" src="githublogo.png">
+    <img id="githubLogoImg" src="instagramlogo.png">
+    <img id="githubLogoImg" src="linkedinlogo.png">
   </div>
 
-    <div id="bioBackground">
-    <div class="bioContainer">
-      <p id="bioPara">- My name is James Edward Hanks Jr. I graduated in May 2020 with a B.Sc. in Computer Science and now I'm a civilian software developer for the United States Air Force. 
-        I love having a job where I can solve complex problems in a collaborative effort. After searching for what a niche that I like, I've been focusing on cloud computing and back-end infrastructure.
-        My up-to-date tech stack includes: AWS, Gitlab CI/CD, Git CLI in general, Jenkins, Docker, and Terraform. In school, I studied much more: Java, Python, HTML/CSS/JavaScript,
-        SQL, PHP, C++, and more. I also have an active Security Clearance.<br></p>
-      
-      <p id="bioPara">
-        - I'm naturally inclined to be interested in machines and numbers, so you'll find that alot of my hobbies incorporate that. In my free time, 
-        I'm into cars, watches, and anything I can find with a sub-system that makes it "go". I've also been playing video games my whole life, though these days
-        I try to spend the time better elsewhere. I've been programming more in my free time recently too, trying to learn as much
-        as I can. You can check out my portfolio to see how some of that has been going.
-      </p> 
-    </div>
-  </div>
+    
 
-    <div id="stangDiv">
+    <div id="leftImgDiv">
       <img id="stangImage" src="mustang.png">
     </div>
 
+    <div id="leftImgDiv">
+      <img id="stangImage" src="meHitting405.png">
+    </div>
+
+    <div id="rightImgDiv">
+      <img id="stangImage" src="meinlivingroom.png">
+    </div>
+
+    <div id="rightImgDiv">
+      <img id="stangImage" src="meAndRocky.png">
+    </div>
     </body>
     </html>
