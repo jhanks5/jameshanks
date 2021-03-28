@@ -132,3 +132,22 @@
 
     </body>
     </html>
+
+    <!-- Bottom image first in sequence to appear in correct order -->
+  <!-- <div id="slowTransitions">
+  <div id="bottomLeftImgDiv">
+      <img class="leftBottomImage" src="webPhotos/meHitting405.png">
+  </div>
+  <div id="topLeftImgDiv">
+    <img class="leftTopImage" src="webPhotos/mustang.png">
+  </div>
+</div>
+  -->
+<!-- TODO: Edit images below -->
+    <!-- <div id="rightImgDiv">
+      <img class="leftTopImage" src="webPhotos/meinlivingroom.png">
+    </div>
+
+    <div id="rightImgDiv">
+      <img class="leftTopImage" src="webPhotos/meAndRocky.png">
+    </div> -->

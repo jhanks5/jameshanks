@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    background: url(webPhotos/broaderShoulders.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#slowTransitions { 
+/* Figure out how to get images to inherit this later */
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+#headerParentDiv {
+  text-align: center;
+  margin-top: 3%;
+}
+#nameHeader {
+  text-align: center; display: inline; float: center;
+  color: #3b6b90; 
+  font-size: 80px; font-family: Helvetica, sans-serif; font-style: normal;
+  letter-spacing: 5px; padding: 5px;
+}
+#nameHeader:hover {
+  text-align: center; display: inline; float: center;
+  font-size: 80px; font-family: Helvetica, sans-serif;
+  background-color: grey; color: black;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.subHeader {
+  text-align: right; display: inline; float: center;
+  color: #3b6b90; 
+}
+#githubLogoImg {
+  width: 100px;
+  height: 100px;
+  vertical-align: left; float: left;
+}
+#rightImgDiv {
+  position: absolute;
+  top: 30%; right: 5%;
+  float: right;
+}
+#topLeftImgDiv {
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    float: left;
+}
+#topLeftImgDiv:hover {
+    top: 16%; left: 2%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.leftTopImage {
+    width: 600px; height: 600px; opacity: 100%;
+    border: 10px solid rgba(202, 218, 209, 0.5);
+}
+.leftTopImage:hover {
+    border: 2px solid black;
+    opacity: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+#bottomLeftImgDiv {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    float: left;
+}
+/* #bottomLeftImgDiv:hover {
+    position: absolute; float: left;
+    top: 47%; left: 15%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+} */
+.leftBottomImage {
+  width: 600px; height: 600px; opacity: 50%;
+  border: 10px solid rgba(202, 218, 209, 0.5);
+}
+/* Commenting out to experiment with JavaScript */
+/* .leftBottomImage:hover {
+  border: 2px solid black;
+  opacity: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+} */
+
+.imageGallery {
+    margin: 10px 50px;
+}
+.imageGallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 300px; height: 300px;
+}
+.imageGallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}

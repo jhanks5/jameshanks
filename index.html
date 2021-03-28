@@ -3,107 +3,90 @@
 
 <head>
     <title>James Hanks</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="lightbox.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    html {
-        background: url(webPhotos/broaderShoulders.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    #headerParentDiv {
-      text-align: center;
-      margin-top: 3%;
-    }
-    #nameHeader {
-      text-align: center; display: inline; float: center;
-      color: #3b6b90; 
-      font-size: 80px; font-family: Helvetica, sans-serif; font-style: normal;
-      letter-spacing: 5px; padding: 5px;
-    }
-    #nameHeader:hover {
-      text-align: center; display: inline; float: center;
-      font-size: 80px; font-family: Helvetica, sans-serif;
-      background-color: grey; color: black;
-      /*Web kit for slow transition*/
-      -webkit-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out;
-      -o-transition: all 1s ease-in-out;
-      -ms-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out; 
-    }
-    .subHeader {
-      text-align: right; display: inline; float: center;
-      color: #3b6b90; 
-    }
-    #githubLogoImg {
-      width: 100px;
-      height: 100px;
-      vertical-align: left; float: left;
-    }
-    #leftImgDiv {
-      position: absolute;
-      top: 30%;
-      left: 5%;
-      float: left;
-    }
-    #rightImgDiv {
-      position: absolute;
-      top: 30%; right: 5%;
-      float: right;
-    }
-    #stangImage {
-      width: 600px;
-      height: 600px;
-      opacity: 90%;
-      border: 10px solid rgba(202, 218, 209, 0.5);
-    }
-    #stangImage:hover {
-      width: 600px;
-      height: 600px;
-      border: 10px solid black;
-      opacity: 100%;
-      /*Web kit for slow transition*/
-      -webkit-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out;
-      -o-transition: all 1s ease-in-out;
-      -ms-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out;
-    }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="javascript.js"></script>
     </head>
     <body>
-    
+    <!-- TODO: Can separate header with 33% width divs -->
     <div id="headerParentDiv">
     <h1 id="nameHeader">JAMES HANKS</h1>
     <a href="about.html" class="subHeader">About</a>
-    <a href="contact.html" class="subHeader">Contact</h1>
+    <a href="contact.html" class="subHeader">Portfolio</a>
     <img id="githubLogoImg" src="webPhotos/githublogo.png">
     <img id="githubLogoImg" src="webPhotos/instagramlogo.png">
     <img id="githubLogoImg" src="webPhotos/linkedinlogo.png">
   </div>
 
-    
+  <!-- Making a Lightbox for images -->
+  <div class="previewContainer">
+    <div class="row">
+      <div class="column">
+      <p id="lightboxHeader">CLICK</p>
+        <img src="webPhotos/meAndRocky.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        <img src="webPhotos/meHitting405.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="column">
+      <p id="lightboxHeader">ME</p>
+        <img src="webPhotos/meinlivingroom.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        <img src="webPhotos/mustang.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+    </div>  
+  </div>
 
-    <div id="leftImgDiv">
-      <img id="stangImage" src="webPhotos/mustang.png">
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="webPhotos/meAndRocky.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="webPhotos/meHitting405.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="webPhotos/meinlivingroom.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="webPhotos/mustang.png" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+      </div>
     </div>
-
-    <div id="leftImgDiv">
-      <img id="stangImage" src="webPhotos/meHitting405.png">
-    </div>
-
-    <div id="rightImgDiv">
-      <img id="stangImage" src="webPhotos/meinlivingroom.png">
-    </div>
-
-    <div id="rightImgDiv">
-      <img id="stangImage" src="webPhotos/meAndRocky.png">
-    </div>
-    </body>
-    </html>
+  </div>
+</body>
+</html>
