@@ -12,4 +12,5 @@ Portfolio website to showcase projects.
 - Add more interaction to the JavaScript/CSS portion
 - Re-instate short "about" section to right side of home page
 - Add portfolio section to the bottom of the webpage, with screenshots
+    - Run Don't Melt as an applet?
 - Final clean-up for HTML/CSS
