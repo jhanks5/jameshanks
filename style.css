@@ -16,12 +16,16 @@ html {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-#headerParentDiv {
-  text-align: center;
-  margin-top: 3%;
+.headerContainer {
+  width: 100%;
+  overflow: auto;
+}
+.headerContainer div {
+    width: 33.33%;
+    float: left; text-align: center;
 }
 #nameHeader {
-  text-align: center; display: inline; float: center;
+  text-align: center; 
   color: #3b6b90; 
   font-size: 80px; font-family: Helvetica, sans-serif; font-style: normal;
   letter-spacing: 5px; padding: 5px;
